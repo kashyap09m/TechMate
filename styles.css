@@ -1,0 +1,340 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b1d9f5; /* Sky blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Aligns logo and nav items vertically */
+    padding: 20px;
+    background-color: #b1d9f5;
+    
+}
+
+.logo img {
+    width: 200px; /* Adjust width as needed */
+    height: auto; 
+    display:flex;
+    justify-content: center;
+    align-items: center ;/* Maintain aspect ratio */
+}
+
+
+.hero {
+    background-color: #b1d9f5; /* Sky blue for the hero section */
+    color: #333; /* Dark text for contrast */
+    padding: 60px 20px;
+    margin-top: 20px; /* Adds space between header and hero section */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: #fbc02d; /* Cream yellow for the title */
+    margin-bottom: 10px; /* Adds space below title */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0; /* Add vertical spacing */
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #f57c00; /* Red-orange for buttons */
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.features {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; /* Space above the features section */
+}
+
+.feature {
+    width: 30%;
+}
+
+.feature h3 {
+    color: #fbc02d; /* Cream yellow for feature titles */
+    font-size: 1.8rem;
+    margin-bottom: 10px; /* Space below the feature title */
+}
+
+footer {
+    padding: 20px;
+    background-color: white;
+    border-top: 2px solid #ccc;
+    color: #666;
+}
+
+.registration {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.registration h2 {
+    font-size: 2.5rem;
+    color: #fbc02d; /* Cream yellow for the title */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 15px 0;
+    text-align: left; /* Align labels to the left */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-top: 20px;
+    background-color: #f57c00; /* Button color */
+    color: white;
+    padding: 15px 30px; /* Increase padding for larger button */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    display:flex;
+    justify-content:right;
+    align-items: center ;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0288d1; /* Sky blue */
+    font-size: 1.2rem;
+}
+
+
+.login {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.login h2 {
+    font-size: 2.5rem;
+    color: #fbc02d; /* Cream yellow for the title */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 15px 0;
+    text-align: left; /* Align labels to the left */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-top: 20px;
+    background-color: #f57c00; /* Button color */
+    color: white;
+    padding: 15px 30px; /* Increase padding for larger button */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    border-radius: 5px;
+}
+
+.match {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.match h2 {
+    font-size: 2.5rem;
+    color: #fbc02d; /* Cream yellow for the title */
+    margin-bottom: 20px;
+}
+
+.match-list {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+}
+
+.match-card {
+    background-color: white; /* Card background */
+    border: 1px solid #ccc; /* Card border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 10px 0; /* Space between cards */
+    width: 300px; /* Fixed width for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.match-card h3 {
+    color: #f57c00; /* Project title color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.match-card p {
+    margin: 5px 0; /* Space between description lines */
+}
+
+
+.chat {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.chat h2 {
+    font-size: 2.5rem;
+    color: #fbc02d; /* Cream yellow for the title */
+    margin-bottom: 20px;
+}
+
+.chat-box {
+    border: 1px solid #ccc; /* Box border */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 600px; /* Max width for chat */
+    margin: 0 auto; /* Center the chat box */
+    height: 400px; /* Fixed height */
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    overflow-y: auto; /* Scroll if overflow */
+}
+
+.messages {
+    flex: 1; /* Take up available space */
+    padding: 10px;
+}
+
+.message {
+    margin: 10px 0; /* Space between messages */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for messages */
+}
+
+.message.received {
+    background-color: #e0f7fa; /* Light blue for received messages */
+    text-align: left; /* Align left */
+}
+
+.message.sent {
+    background-color: #ffe0b2; /* Light orange for sent messages */
+    text-align: right; /* Align right */
+}
+
+.input-area {
+    display: flex; /* Horizontal layout */
+    padding: 10px;
+}
+
+.input-area input {
+    flex: 1; /* Take up available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.input-area .btn {
+    margin-left: 10px; /* Space between input and button */
+}
+
+.swipe {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.swipe h2 {
+    font-size: 2.5rem;
+    color: #fbc02d; /* Cream yellow for the title */
+    margin-bottom: 20px;
+}
+
+.swipe-card {
+    background-color: white; /* Card background */
+    border: 1px solid #ccc; /* Card border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 300px; /* Fixed width for cards */
+    margin: 0 auto; /* Center the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.swipe-buttons {
+    margin-top: 20px; /* Space above buttons */
+}
+
+.swipe-buttons .btn {
+    margin: 0 10px; /* Space between buttons */
+    padding: 10px 20px; /* Button padding */
+}
+
+.profile {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.profile h2 {
+    font-size: 2.5rem;
+    color: #fbc02d; /* Cream yellow for the title */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 15px 0;
+    text-align: left; /* Align labels to the left */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-top: 20px;
+    background-color: #f57c00; /* Button color */
+    color: white;
+    padding: 10px 20px; /* Button padding */
+}

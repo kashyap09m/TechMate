@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - TechMate</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="TechMate Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <h2>Your Profile</h2>
+        <form id="profile-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" placeholder="e.g., Python, Django" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience:</label>
+                <select id="experience" name="experience" required>
+                    <option value="fresher">Fresher</option>
+                    <option value="1">1 Project</option>
+                    <option value="2">2 Projects</option>
+                    <option value="3">3 Projects</option>
+                    <option value="more">More than 3 Projects</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload Resume (PDF, max 100MB):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf" required>
+            </div>
+            <button type="submit" class="btn">Save Changes</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TechMate. All rights reserved.</p>
+    </footer>
+</body>
+</html>
